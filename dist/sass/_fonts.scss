@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+@font-face {
+  font-family: 'my-font';
+  src:  url('../fonts/my-font.eot?x881iw');
+  src:  url('../fonts/my-font.eot?x881iw#iefix') format('embedded-opentype'),
+  url('../fonts/my-font.ttf?x881iw') format('truetype'),
+  url('../fonts/my-font.woff?x881iw') format('woff'),
+  url('../fonts/my-font.svg?x881iw#my-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'helvetica';
+  src: url('../fonts/helvetica-neue-bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}

@@ -1,0 +1,234 @@
+.vertical-align::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-left: -4px;
+}
+
+.vertical-align > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+  @media (min-width: 992px) {
+    width: 970px;
+  }
+  @media (min-width: 1230px) {
+    width: 1200px;
+  }
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.btn-wrap {
+}
+
+.btn {
+  display: block;
+  color: #000;
+  background: #fff;
+  width: 270px;
+  font-size: 16px;
+  line-height: 3.2em;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  position: relative;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  &:before {
+    content: "\e900";
+    font-family: 'my-font' !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    color: #fff;
+    font-size: 4em;
+  }
+  &:hover {
+    background: $colorDark;
+    color: #fff;
+    &:before {
+      -webkit-transform: translateX(40px);
+      -moz-transform: translateX(40px);
+      -ms-transform: translateX(40px);
+      -o-transform: translateX(40px);
+      transform: translateX(40px);
+      color: $colorDark;
+    }
+  }
+  &:active {
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    -webkit-transform: scale(.99);
+    -moz-transform: scale(.99);
+    -ms-transform: scale(.99);
+    -o-transform: scale(.99);
+    transform: scale(.99);
+    -webkit-box-shadow: inset 0 0 12px 2px #908d8d;
+    -moz-box-shadow: inset 0 0 12px 2px #908d8d;
+    box-shadow: inset 0 0 12px 2px #908d8d;
+    &:before {
+      -webkit-transform: translateX(60px);
+      -moz-transform: translateX(60px);
+      -ms-transform: translateX(60px);
+      -o-transform: translateX(60px);
+      transform: translateX(60px);
+      -webkit-transition: .2s;
+      -moz-transition: .2s;
+      -ms-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+    }
+  }
+}
+
+.title-wrap {
+  .title {
+  }
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'my-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-right:before {
+  content: "\e900";
+}
+
+.icon-icon1:before {
+  content: "\e901";
+  font-size: 35px;
+  margin-top: 3px;
+  display: inline-block;
+}
+
+.icon-icon2:before {
+  content: "\e902";
+  font-size: 25px;
+}
+
+.icon-icon3:before {
+  content: "\e903";
+  font-size: 35px;
+}
+
+.icon-icon4:before {
+  content: "\e904";
+  font-size: 35px;
+}
+
+.icon-linkedin, .icon-instagram, .icon-facebook, .icon-youtube-square {
+  overflow: hidden;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    z-index: 1;
+  }
+  &:before {
+    position: relative;
+    z-index: 2;
+  }
+  &:hover {
+    &:after {
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+}
+
+.icon-linkedin {
+
+  &:after {
+    background: #0077b5;
+  }
+  &:before {
+    content: "\e906";
+  }
+}
+
+.icon-instagram {
+  &:after {
+    background: #bd3381;
+  }
+  &:before {
+    content: "\e907";
+  }
+}
+
+.icon-facebook {
+  &:after {
+    background: #3b5998;
+  }
+  &:before {
+    content: "\e908";
+  }
+}
+
+.icon-facebook-f:before {
+  content: "\e908";
+}
+
+.icon-youtube-square {
+  &:after {
+    background: #e62117;
+  }
+  &:before {
+    content: "\e905";
+  }
+}
+

@@ -1,0 +1,67 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  &:focus {
+    outline: none;
+  }
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $fontLato, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  color: $colorDark;
+  background-color: #fff;
+  margin: 0;
+  font-weight: normal;
+}
+
+a {
+  color: #313131;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $colorHover;
+}
+
+a:focus {
+  outline: none;
+  text-decoration: none;
+  font-weight: bold;
+  color: $colorDark;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+input, button, textarea, select {
+  outline: none;
+}
